@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
      ========================================== */
   const giroData = {
     taqueria: {
-      title: "🌮 Taquería & Servicio Rápido",
+      title: "Taquería & Servicio Rápido",
       desc: "Optimizado para velocidad extrema en cobro de mostrador, KDS táctil en comanderas de cocina, emisión instantánea de ticket QR y monitor público de turnos.",
       features: [
         "Cobro ágil en 1 clic sin fricciones ni esperas",
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       badgeText: "Servicio Ultra Rápido"
     },
     restaurante: {
-      title: "🍷 Restaurante Formal / Casual",
+      title: "Restaurante Formal / Casual",
       desc: "Experiencia gastronómica 360° con Mapa de Mesas interactivo, comanderas móviles para meseros, división de cuentas en 1 clic y módulo de reservaciones.",
       features: [
         "Plano interactivo de mesas con estado en tiempo real (Libre/Ocupada/Cuentas)",
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
       badgeText: "Experiencia 360°"
     },
     cafeteria: {
-      title: "☕ Cafetería & Panadería",
+      title: "Cafetería & Panadería",
       desc: "Punto de Venta veloz con menú de modificadores de receta (leches, siropes, tamaños) y Menú Digital QR autogestionable.",
       features: [
         "Modificadores de productos avanzados (Ej: Deslactosada, Extra shot)",
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
       badgeText: "Gestión de Recetas"
     },
     darkkitchen: {
-      title: "🛵 Dark Kitchen & Solo Delivery",
+      title: "Dark Kitchen & Solo Delivery",
       desc: "Concentra pedidos de Uber Eats, DiDi, Rappi y canal propio en un solo pantalla KDS con alertas auditivas y control preventivo de insumos.",
       features: [
         "Integración centralizada de apps de delivery",
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
       badgeText: "Hub de Delivery"
     },
     foodtruck: {
-      title: "🚚 Food Truck & Carritos",
+      title: "Food Truck & Carritos",
       desc: "Operación liviana de alta velocidad en 1 sola pantalla touch o tablet, con cobros RestIA Pay Contactless y modo offline garantizado.",
       features: [
         "Modo compacto para pantalla táctil de 10 pulgadas o laptop",
@@ -145,11 +145,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
       setTimeout(() => {
         payBtn.disabled = false;
-        payBtn.innerHTML = `💳 Tap / Acercar Tarjeta o Apple Pay`;
+        payBtn.innerHTML = `
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle; margin-right:4px;"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+          Tap / Acercar Tarjeta o Apple Pay
+        `;
         posResult.style.display = 'block';
         const txId = Math.floor(100000 + Math.random() * 900000);
         posResult.innerHTML = `
-          <strong>✅ ¡Pago Aprobado!</strong><br>
+          <strong><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="color:var(--primary); vertical-align:middle; margin-right:4px;"><polyline points="20 6 9 17 4 12"></polyline></svg> ¡Pago Aprobado!</strong><br>
           Transacción #${txId} conciliada automáticamente.<br>
           <span style="font-size: 0.8rem; color: #94a3b8;">Ticket QR generado & enviado por WhatsApp</span>
         `;
@@ -174,22 +177,22 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!kdsContainer) return;
     kdsContainer.innerHTML = orders.map(order => {
       let timerClass = "timer-green";
-      let statusLabel = "🟢 Normal";
+      let statusLabel = '<span style="color:var(--primary); margin-right:4px;">●</span> Normal';
       const mins = Math.floor(order.elapsedSeconds / 60);
 
       if (mins >= 15) {
         timerClass = "timer-red";
-        statusLabel = "🔴 URGENTE (>15m)";
+        statusLabel = '<span style="color:var(--accent-rose); margin-right:4px;">●</span> URGENTE (>15m)';
       } else if (mins >= 8) {
         timerClass = "timer-yellow";
-        statusLabel = "🟡 ALERTA (>8m)";
+        statusLabel = '<span style="color:var(--accent-amber); margin-right:4px;">●</span> ALERTA (>8m)';
       }
 
       return `
         <div class="kds-ticket ${timerClass}">
           <div class="kds-ticket-header">
             <span>#${order.id} - ${order.table}</span>
-            <span>⏱️ ${mins}m</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle; margin-right:2px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> ${mins}m</span>
           </div>
           <div style="font-size:0.75rem; margin-bottom:0.4rem; font-weight:600; color:var(--text-muted);">${statusLabel}</div>
           <ul class="kds-items">
