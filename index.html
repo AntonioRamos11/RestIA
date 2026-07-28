@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>RestIA - Ecosistema POS + Inteligencia Artificial para Restaurantes</title>
+  <meta name="description" content="La plataforma gastronómica de nueva generación: Punto de Venta (POS), KDS de cocina táctil, RestIA Pay Contactless, IA predictiva de ventas e inventarios, y auto-facturación CFDI.">
+  <meta name="keywords" content="restia, pos restaurante, software taqueria, kds cocina, punto de venta inteligencia artificial, comanderas digital, autofacturacion cfdi, restia pay">
+  <meta name="author" content="RestIA Software">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RestIA - Punto de Venta & Inteligencia Artificial Gastronómica">
+  <meta property="og:description" content="Aumenta tus ventas y optimiza el 100% de la operación de tu restaurante con el ecosistema RestIA.">
+  <meta property="og:image" content="./assets/logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./assets/logo.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "RestIA POS",
+    "operatingSystem": "Linux, Windows, Web, Android",
+    "applicationCategory": "BusinessApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "499",
+      "priceCurrency": "MXN"
+    },
+    "description": "Sistema de Punto de Venta e Inteligencia Artificial para gestión de restaurantes, taquerías, cafeterías y dark kitchens."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Ambient Background Glow Orbs -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-orb-1"></div>
+    <div class="glow-orb-2"></div>
+    <div class="glow-orb-3"></div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo-link" id="nav-logo">
+        <img src="./assets/logo.png" alt="RestIA Logo" class="logo-img">
+        <span class="logo-text">Rest<span class="text-gradient">IA</span></span>
+      </a>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menú">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#giros" class="nav-link">Giros de Negocio</a></li>
+          <li><a href="#caracteristicas" class="nav-link">Características</a></li>
+          <li><a href="#simuladores" class="nav-link">Demo Interactiva</a></li>
+          <li><a href="#calculadora" class="nav-link">Calculadora ROI</a></li>
+          <li><a href="#precios" class="nav-link">Planes</a></li>
+          <li><a href="#contacto" class="btn btn-primary">Probar Gratis</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="badge badge-primary">
+            <span class="pulse-dot"></span>
+            <span>RestIA v2.0 - Potenciado con Inteligencia Artificial</span>
+          </div>
+
+          <h1 class="hero-title">
+            El Ecosistema POS + IA que Transforma tu Restaurante en una <span class="text-gradient">Máquina de Ventas</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Controla el 100% de tu operación gastronómica: Punto de Venta ultra veloz, KDS en cocina, pagos contactless RestIA Pay, auto-facturación CFDI y predicciones con Machine Learning.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#simuladores" class="btn btn-primary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              Probar Demo Interactiva
+            </a>
+            <a href="#contacto" class="btn btn-secondary">
+              Agendar Demostración Personalizada
+            </a>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="stat-item">
+              <h3>+35%</h3>
+              <p>Velocidad de Servicio</p>
+            </div>
+            <div class="stat-item">
+              <h3>-80%</h3>
+              <p>Mermas de Insumos</p>
+            </div>
+            <div class="stat-item">
+              <h3>100%</h3>
+              <p>Control de Caja y Cuentas</p>
+            </div>
+            <div class="stat-item">
+              <h3>0s</h3>
+              <p>Esperas en Cobro NFC</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GIROS DE NEGOCIO SECTION -->
+    <section class="section-padding" id="giros">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge badge-amber">Adaptación Instantánea</div>
+          <h2 class="section-title">Diseñado a la Medida de tu <span class="text-gradient">Giro Gastronómico</span></h2>
+          <p class="section-desc">Selecciona el tipo de establecimiento en 1 clic y RestIA adaptará la interfaz, comandas y pestañas activas para máxima eficiencia.</p>
+        </div>
+
+        <div class="giros-tabs">
+          <button class="giro-tab-btn active" data-giro="taqueria" id="tab-taqueria">🌮 Taquería & Servicio Rápido</button>
+          <button class="giro-tab-btn" data-giro="restaurante" id="tab-restaurante">🍷 Restaurante Formal</button>
+          <button class="giro-tab-btn" data-giro="cafeteria" id="tab-cafeteria">☕ Cafetería & Panadería</button>
+          <button class="giro-tab-btn" data-giro="darkkitchen" id="tab-darkkitchen">🛵 Dark Kitchen</button>
+          <button class="giro-tab-btn" data-giro="foodtruck" id="tab-foodtruck">🚚 Food Truck & Carrito</button>
+        </div>
+
+        <div class="giro-display-card">
+          <div class="giro-info">
+            <div class="badge badge-primary" id="giro-badge" style="margin-bottom: 1rem;">Servicio Ultra Rápido</div>
+            <h3 id="giro-title">🌮 Taquería & Servicio Rápido</h3>
+            <p id="giro-desc">Optimizado para velocidad extrema en cobro de mostrador, KDS táctil en comanderas de cocina, emisión instantánea de ticket QR y monitor público de turnos.</p>
+            <ul class="giro-features-list" id="giro-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Cobro ágil en 1 clic sin fricciones ni esperas</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>KDS con temporizadores de color (Verde/Amarillo/Rojo)</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Pantalla pública tipo McDonald's para entrega de órdenes</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Envío de recibo por WhatsApp sin consumir papel térmico</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="giro-mockup-window">
+            <div class="window-header">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span style="font-size: 0.75rem; color: #64748b; margin-left: 0.5rem;">RestIA POS - Terminal Mode</span>
+            </div>
+            <div class="window-body">
+              <div style="background: #141b2d; padding: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
+                  <strong style="color: #10b981;">Orden #108 - Taquería Mostrador</strong>
+                  <span style="font-size: 0.8rem; color: #94a3b8;">Hace 2 min</span>
+                </div>
+                <div style="font-size: 0.85rem; color: #cbd5e1; display: flex; flex-direction: column; gap: 0.3rem;">
+                  <div>• 5x Tacos al Pastor c/ Queso</div>
+                  <div>• 2x Órdenes de Volcanes Bistec</div>
+                  <div>• 3x Refrescos de Vidrio 355ml</div>
+                </div>
+                <div style="margin-top: 1rem; padding-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center;">
+                  <span style="font-size: 0.85rem; color: #94a3b8;">Total a Cobrar:</span>
+                  <span style="font-size: 1.25rem; font-weight: 800; color: #ffffff;">$345.00 MXN</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE FEATURES GRID SECTION -->
+    <section class="section-padding" id="caracteristicas">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge badge-primary">Ecosistema 360°</div>
+          <h2 class="section-title">Todo lo que Necesitas en un <span class="text-gradient">Solo Sistema</span></h2>
+          <p class="section-desc">Olvídate de contratar sistemas fragmentados. RestIA integra la terminal de pago, el control de cocina, la asistencia y la IA en 1 solución.</p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <article class="feature-card">
+            <div class="feature-icon">💳</div>
+            <span class="feature-tag">RestIA Pay</span>
+            <h3>Terminal de Pago Inteligente</h3>
+            <p>Cobro Contactless (NFC/Apple Pay), Chip y Tarjeta. Calculadora de propina automática sugerida y autoconciliación inmediata con la Caja.</p>
+          </article>
+
+          <!-- Feature 2 -->
+          <article class="feature-card">
+            <div class="feature-icon">📺</div>
+            <span class="feature-tag">KDS Táctil</span>
+            <h3>Monitor de Cocina 3-Color Timers</h3>
+            <p>Temporizadores visuales 🟢 Verde (&lt; 8 min), 🟡 Amarillo (8-12 min), 🔴 Rojo (&gt; 15 min). Alertas sonoras e integración con Monitor Público de entrega.</p>
+          </article>
+
+          <!-- Feature 3 -->
+          <article class="feature-card">
+            <div class="feature-icon">🤖</div>
+            <span class="feature-tag">Machine Learning</span>
+            <h3>IA Predictiva & Auto-Reabastecimiento</h3>
+            <p>Algoritmos Scikit-Learn que predicen la demanda de platillos por día/hora, generan la lista de compras preventiva y detectan anomalías de mermas.</p>
+          </article>
+
+          <!-- Feature 4 -->
+          <article class="feature-card">
+            <div class="feature-icon">⏱️</div>
+            <span class="feature-tag">Recursos Humanos</span>
+            <h3>Reloj Checador de Personal</h3>
+            <p>Teclado táctil PIN de 4 dígitos para fichado veloz de entrada y salida de meseros y cocineros. Monitoreo en vivo de horas laboradas y retardos.</p>
+          </article>
+
+          <!-- Feature 5 -->
+          <article class="feature-card">
+            <div class="feature-icon">🖥️</div>
+            <span class="feature-tag">Customer Display</span>
+            <h3>Doble Pantalla de Mostrador</h3>
+            <p>Muestra al comensal el carrito en vivo de sus productos y un carrusel publicitario animado con promociones activas y QR de auto-facturación.</p>
+          </article>
+
+          <!-- Feature 6 -->
+          <article class="feature-card">
+            <div class="feature-icon">🧾</div>
+            <span class="feature-tag">Ticket Digital & CFDI</span>
+            <h3>Recibos QR y WhatsApp Instantáneo</h3>
+            <p>Cero gasto en papel térmico. Envía el recibo con 1 clic por WhatsApp al cliente y habilita la auto-facturación fiscal CFDI 4.0 inmediata.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE SIMULATORS SECTION -->
+    <section class="section-padding simulators-section" id="simuladores">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge badge-amber">Prueba en Vivo</div>
+          <h2 class="section-title">Experimenta la Potencia de <span class="text-gradient">RestIA</span></h2>
+          <p class="section-desc">Prueba los simuladores interactivos directamente en tu navegador antes de instalar nada.</p>
+        </div>
+
+        <div class="simulators-grid">
+          <!-- Simulator 1: RestIA Pay Terminal -->
+          <div class="simulator-box">
+            <h3>💳 Simulator: RestIA Pay POS</h3>
+            <p style="color: var(--text-muted); margin-bottom: 1rem; font-size: 0.9rem;">
+              Simula el proceso de cobro contactless con desglose automático de propina y conciliación instantánea:
+            </p>
+            <div class="pos-screen">
+              <div class="pos-header">
+                <span style="font-size: 0.8rem; font-weight: 700; color: var(--primary);">RESTIA PAY TERMINAL</span>
+                <span class="badge badge-primary" style="font-size: 0.7rem; padding: 0.2rem 0.5rem;">NFC Ready</span>
+              </div>
+              <div style="text-align: center; font-size: 0.85rem; color: var(--text-muted);">Mesa #4 - Total de Consumo</div>
+              <div class="pos-amount" id="pos-amount-display">$287.50 MXN</div>
+
+              <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.4rem; text-align: center;">Seleccionar Propina Sugerida:</div>
+              <div class="tip-selector">
+                <button class="tip-btn" data-tip="0">0%</button>
+                <button class="tip-btn" data-tip="0.10">10%</button>
+                <button class="tip-btn active" data-tip="0.15">15%</button>
+                <button class="tip-btn" data-tip="0.20">20%</button>
+              </div>
+
+              <button class="pos-pay-btn" id="pos-pay-btn">
+                💳 Tap / Acercar Tarjeta o Apple Pay
+              </button>
+
+              <div class="pos-result" id="pos-result-box"></div>
+            </div>
+          </div>
+
+          <!-- Simulator 2: KDS Kitchen Monitor -->
+          <div class="simulator-box">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+              <h3 style="margin-bottom: 0;">📺 Simulator: KDS Cocina</h3>
+              <button class="btn btn-secondary" id="kds-add-order-btn" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">
+                + Simular Nueva Orden
+              </button>
+            </div>
+            <p style="color: var(--text-muted); margin-bottom: 1rem; font-size: 0.9rem;">
+              Monitoreo táctil de preparación en cocina. Los temporizadores cambian de color según el tiempo de espera:
+            </p>
+
+            <div class="kds-monitor">
+              <div class="kds-tickets-container" id="kds-container">
+                <!-- Dynamically populated via js/main.js -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALCULATOR SECTION -->
+    <section class="section-padding" id="calculadora">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge badge-primary">Retorno de Inversión</div>
+          <h2 class="section-title">¿Cuánto Dinero Ganarás con <span class="text-gradient">RestIA</span>?</h2>
+          <p class="section-desc">Calcula el incremento de ganancias mensuales estimado gracias a la velocidad de cobro, ventas sugeridas y reducción de mermas.</p>
+        </div>
+
+        <div class="calculator-card">
+          <div class="calc-controls">
+            <div class="range-group">
+              <div class="range-label">
+                <span>Ordenes atendidas por día:</span>
+                <span id="calc-orders-val" style="color: var(--primary);">80 ordenes/día</span>
+              </div>
+              <input type="range" class="range-slider" id="calc-orders" min="20" max="300" step="5" value="80">
+            </div>
+
+            <div class="range-group">
+              <div class="range-label">
+                <span>Ticket promedio por consumo:</span>
+                <span id="calc-ticket-val" style="color: var(--primary);">$250 MXN</span>
+              </div>
+              <input type="range" class="range-slider" id="calc-ticket" min="50" max="1000" step="10" value="250">
+            </div>
+          </div>
+
+          <div class="calc-results-box">
+            <span style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">Ganancia Adicional Mensual Estimada</span>
+            <div class="calc-total" id="calc-monthly-profit">$108,000 MXN/mes</div>
+            <div style="font-size: 0.95rem; color: var(--secondary); font-weight: 600;" id="calc-hours-saved">+96 horas/mes libres para ti</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section class="section-padding" id="precios">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge badge-amber">Precios Transparentes</div>
+          <h2 class="section-title">Planes Flexibles para Todo <span class="text-gradient">Presupuesto</span></h2>
+          <p class="section-desc">Sin plazos forzosos ni comisiones ocultas. Elige la suscripción que mejor se adapte a tu restaurante.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Plan 1 -->
+          <div class="pricing-card">
+            <h3>Taquería & Food Truck</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.4rem;">Ideal para negocios de servicio rápido que buscan velocidad.</p>
+            <div class="pricing-price">$499 <span>MXN/mes</span></div>
+            <ul class="pricing-features">
+              <li class="checked">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Punto de Venta POS ilimitado</span>
+              </li>
+              <li class="checked">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>RestIA Pay Terminal simulator & cobros</span>
+              </li>
+              <li class="checked">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Ticket Digital QR por WhatsApp</span>
+              </li>
+              <li class="checked">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Reloj Checador por PIN (hasta 5 empleados)</span>
+              </li>
+            </ul>
+            <a href="#contacto" class="btn btn-secondary" style="width: 100%;">Comenzar Ahora</a>
+          </div>
+
+          <!-- Plan 2 (Featured) -->
+          <div class="pricing-card featured">
+            <div class="popular-badge">MÁS POPULAR</div>
+            <h3>Restaurante Pro</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.4rem;">Experiencia 360° completa para restaurantes, bares y cafés.</p>
+            <div class="pricing-price">$999 <span>MXN/mes</span></div>
+            <ul class="pricing-features">
+              <li class="checked">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Todo lo del Plan Taquería</span>
+              </li>
+              <li class="checked">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>KDS Cocina táctil con temporizadores 3-color</span>
+              </li>
+              <li class="checked">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>IA Predictiva de ventas & lista de compras</span>
+              </li>
+              <li class="checked">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Mapa interactivo de mesas y comanderas tablet</span>
+              </li>
+              <li class="checked">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Auto-Facturación CFDI 4.0</span>
+              </li>
+            </ul>
+            <a href="#contacto" class="btn btn-primary" style="width: 100%;">Probar Gratis 14 Días</a>
+          </div>
+
+          <!-- Plan 3 -->
+          <div class="pricing-card">
+            <h3>Enterprise Multi-Sucursal</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.4rem;">Para franquicias y cadenas de restaurantes con alto volumen.</p>
+            <div class="pricing-price">$1,899 <span>MXN/mes</span></div>
+            <ul class="pricing-features">
+              <li class="checked">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Todo lo del Plan Pro</span>
+              </li>
+              <li class="checked">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Consola central multi-sucursal</span>
+              </li>
+              <li class="checked">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Integración API directa con Uber/DiDi/Rappi</span>
+              </li>
+              <li class="checked">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Soporte prioritario 24/7 y ejecutivo dedicado</span>
+              </li>
+            </ul>
+            <a href="#contacto" class="btn btn-secondary" style="width: 100%;">Contactar Ventas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & DEMO REQUEST FORM SECTION -->
+    <section class="section-padding" id="contacto" style="background: rgba(13, 17, 26, 0.6); border-top: 1px solid var(--border-color);">
+      <div class="container" style="max-width: 800px;">
+        <div class="section-header" style="margin-bottom: 2.5rem;">
+          <div class="badge badge-primary">Empieza Hoy Mismo</div>
+          <h2 class="section-title">Solicita tu <span class="text-gradient">Demostración Gratuita</span></h2>
+          <p class="section-desc">Déjanos tus datos y un especialista gastronómico de RestIA te contactará en menos de 15 minutos para configurar tu cuenta demo.</p>
+        </div>
+
+        <form style="background: var(--bg-card); backdrop-filter: var(--glass-backdrop); border: 1px solid var(--border-color); padding: 2.5rem; border-radius: var(--radius-lg);" onsubmit="event.preventDefault(); alert('¡Gracias por tu interés en RestIA! Un ejecutivo te contactará de inmediato.');">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+            <div>
+              <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--text-muted);">Nombre Completo</label>
+              <input type="text" required placeholder="Ej: Carlos Mendoza" style="width: 100%; padding: 0.8rem; background: #0b0f19; border: 1px solid var(--border-color); border-radius: var(--radius-sm); color: white; outline: none;">
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--text-muted);">Teléfono / WhatsApp</label>
+              <input type="tel" required placeholder="Ej: 55 1234 5678" style="width: 100%; padding: 0.8rem; background: #0b0f19; border: 1px solid var(--border-color); border-radius: var(--radius-sm); color: white; outline: none;">
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+            <div>
+              <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--text-muted);">Nombre de tu Restaurante</label>
+              <input type="text" required placeholder="Ej: Taquería El Pastorcito" style="width: 100%; padding: 0.8rem; background: #0b0f19; border: 1px solid var(--border-color); border-radius: var(--radius-sm); color: white; outline: none;">
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--text-muted);">Giro Gastronómico</label>
+              <select style="width: 100%; padding: 0.8rem; background: #0b0f19; border: 1px solid var(--border-color); border-radius: var(--radius-sm); color: white; outline: none;">
+                <option>Taquería / Servicio Rápido</option>
+                <option>Restaurante Formal / Casual</option>
+                <option>Cafetería / Panadería</option>
+                <option>Dark Kitchen / Delivery</option>
+                <option>Food Truck / Carrito</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1.05rem;">
+            🚀 Activar Demostración Sin Compromiso
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="logo-link">
+            <img src="./assets/logo.png" alt="RestIA Logo" class="logo-img">
+            <span class="logo-text">Rest<span class="text-gradient">IA</span></span>
+          </a>
+          <p>Ecosistema integral de Punto de Venta e Inteligencia Artificial diseñado para acelerar las ventas y la eficiencia operativa de la industria gastronómica.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Producto</h4>
+          <ul>
+            <li><a href="#caracteristicas">RestIA Pay</a></li>
+            <li><a href="#caracteristicas">KDS de Cocina</a></li>
+            <li><a href="#caracteristicas">Reloj Checador</a></li>
+            <li><a href="#caracteristicas">IA Predictiva</a></li>
+            <li><a href="#caracteristicas">Auto-Facturación</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Giros</h4>
+          <ul>
+            <li><a href="#giros">Taquerías</a></li>
+            <li><a href="#giros">Restaurantes</a></li>
+            <li><a href="#giros">Cafeterías</a></li>
+            <li><a href="#giros">Dark Kitchens</a></li>
+            <li><a href="#giros">Food Trucks</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="https://wa.me/5215512345678" target="_blank">WhatsApp Directo</a></li>
+            <li><a href="mailto:contacto@rest-ia.com">contacto@rest-ia.com</a></li>
+            <li><a href="#precios">Suscripciones</a></li>
+            <li><a href="https://github.com/AntonioRamos11/rest-ia-page" target="_blank">GitHub Repo</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 RestIA Software. Todos los derechos reservados. Desarrollado para GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/5215512345678?text=Hola,%20me%20interesa%20probar%20RestIA%20para%20mi%20restaurante" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+    💬
+  </a>
+
+  <!-- Script -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
